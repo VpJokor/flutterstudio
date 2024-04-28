@@ -11,6 +11,7 @@ class HomeWindowLeft extends StatelessWidget{
     return Container(
       width: 300,
       color: Colors.grey.shade300,
+      alignment: Alignment.center,
       child: const Text("左侧面板"),
     );
   }

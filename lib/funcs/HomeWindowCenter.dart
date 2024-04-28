@@ -10,6 +10,7 @@ class HomeWindowCenter extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       color: Colors.grey.shade200,
+      alignment: Alignment.center,
       child: const Text("中间窗口"),
     );
   }

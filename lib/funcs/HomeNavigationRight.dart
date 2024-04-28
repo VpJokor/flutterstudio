@@ -16,6 +16,7 @@ class HomeNavigationRight extends StatelessWidget{
           LeftNavigationTab(title: "PreView",onTap: (){ print("点击导航栏1" ); },),
           LeftNavigationTab(title: "GitChat",onTap: (){ print("点击导航栏2" ); },),
           LeftNavigationTab(title: "ChatGPT",onTap: (){ print("点击导航栏2" ); },),
+          LeftNavigationTab(title: "Learn",onTap: (){ print("点击导航栏2" ); },),
         ],
       ),
     );

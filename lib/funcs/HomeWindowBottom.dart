@@ -11,6 +11,7 @@ class HomeWindowBottom extends StatelessWidget{
     return Container(
       height: 200,
       color: Colors.grey.shade100,
+      alignment: Alignment.center,
       child: const Text("底部面板"),
     );
   }

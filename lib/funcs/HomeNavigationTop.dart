@@ -11,6 +11,7 @@ class HomeNavigationTop extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       color: R.color.white,
+      margin: EdgeInsets.only(right: 10),
       child: Row(
         children: [
           /// File： new(Project,File,Directory,DartFile) , Recent Project , Open Project , Open File , Invalidate Caches , Save All
@@ -23,6 +24,16 @@ class HomeNavigationTop extends StatelessWidget{
           TopNavigationTab(title: "Git",onTap: (){ print("点击导航栏4" ); },),
           /// Help: Flutter Studio Help , What News , Licenses , Check for update , About
           TopNavigationTab(title: "Help",onTap: (){ print("点击导航栏4" ); },),
+          Spacer(),
+          // Container(decoration: ,),
+          SizedBox(width: 10),
+          Icon(Icons.play_arrow_sharp),
+          SizedBox(width: 10),
+          Icon(Icons.replay_5_rounded),
+          SizedBox(width: 10),
+          Icon(Icons.stop),
+          SizedBox(width: 130),
+          Icon(Icons.account_circle_outlined),
         ],
       ),
     );
