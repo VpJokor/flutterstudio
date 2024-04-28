@@ -1,13 +1,13 @@
 
-import 'package:FlutterCheck/funcs/HomeNavigationBottom.dart';
-import 'package:FlutterCheck/funcs/HomeNavigationLeft.dart';
-import 'package:FlutterCheck/funcs/HomeNavigationRight.dart';
-import 'package:FlutterCheck/funcs/HomeNavigationTop.dart';
-import 'package:FlutterCheck/funcs/HomeWindowBottom.dart';
-import 'package:FlutterCheck/funcs/HomeWindowCenter.dart';
-import 'package:FlutterCheck/funcs/HomeWindowLeft.dart';
 import 'package:flutter/material.dart';
 
+import 'HomeNavigationBottom.dart';
+import 'HomeNavigationLeft.dart';
+import 'HomeNavigationRight.dart';
+import 'HomeNavigationTop.dart';
+import 'HomeWindowBottom.dart';
+import 'HomeWindowCenter.dart';
+import 'HomeWindowLeft.dart';
 import 'HomeWindowRight.dart';
 
 /// FlutterCheck 主页
