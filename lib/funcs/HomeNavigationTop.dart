@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../res/R.dart';
 
 /// 主页顶部导航栏
+
 class HomeNavigationTop extends StatelessWidget{
   const HomeNavigationTop({super.key});
 
@@ -12,10 +13,16 @@ class HomeNavigationTop extends StatelessWidget{
       color: R.color.white,
       child: Row(
         children: [
-          TopNavigationTab(title: "导航栏1",onTap: (){ print("点击导航栏1" ); },),
-          TopNavigationTab(title: "导航栏2",onTap: (){ print("点击导航栏2" ); },),
-          TopNavigationTab(title: "导航栏3",onTap: (){ print("点击导航栏3" ); },),
-          TopNavigationTab(title: "导航栏4",onTap: (){ print("点击导航栏4" ); },),
+          /// File： new(Project,File,Directory,DartFile) , Recent Project , Open Project , Open File , Invalidate Caches , Save All
+          TopNavigationTab(title: "File",onTap: (){ print("点击导航栏1" ); },),
+          /// Settings:  Apperance , Flutter , Shortcut Keys , Device
+          TopNavigationTab(title: "Settings",onTap: (){ print("点击导航栏2" ); },),
+          ///
+          TopNavigationTab(title: "Tools",onTap: (){ print("点击导航栏3" ); },),
+          /// Git:  Commit , Push , Update , Pull , Fetch , Merge ,Rebase , Patch , Show GitLog , undoCommit , Current File
+          TopNavigationTab(title: "Git",onTap: (){ print("点击导航栏4" ); },),
+          /// Help: Flutter Studio Help , What News , Licenses , Check for update , About
+          TopNavigationTab(title: "Help",onTap: (){ print("点击导航栏4" ); },),
         ],
       ),
     );

@@ -13,10 +13,9 @@ class HomeNavigationRight extends StatelessWidget{
       color: R.color.white,
       child: Column(
         children: [
-          LeftNavigationTab(title: "导航栏1",onTap: (){ print("点击导航栏1" ); },),
-          LeftNavigationTab(title: "导航栏2",onTap: (){ print("点击导航栏2" ); },),
-          LeftNavigationTab(title: "导航栏3",onTap: (){ print("点击导航栏3" ); },),
-          LeftNavigationTab(title: "导航栏4",onTap: (){ print("点击导航栏4" ); },),
+          LeftNavigationTab(title: "PreView",onTap: (){ print("点击导航栏1" ); },),
+          LeftNavigationTab(title: "GitChat",onTap: (){ print("点击导航栏2" ); },),
+          LeftNavigationTab(title: "ChatGPT",onTap: (){ print("点击导航栏2" ); },),
         ],
       ),
     );

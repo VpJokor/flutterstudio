@@ -13,10 +13,11 @@ class HomeNavigationBottom extends StatelessWidget{
       color: R.color.white,
       child: const Row(
         children: [
-          BottomNavigationTab(title: "底部导航lan",),
-          BottomNavigationTab(title: "底部导航lan",),
-          BottomNavigationTab(title: "底部导航lan",),
-          BottomNavigationTab(title: "底部导航lan",),
+          BottomNavigationTab(title: "Git",),
+          BottomNavigationTab(title: "TODO",),
+          BottomNavigationTab(title: "Run",),
+          BottomNavigationTab(title: "Command",),
+          BottomNavigationTab(title: "Logcat",),
         ],
       ),
     );

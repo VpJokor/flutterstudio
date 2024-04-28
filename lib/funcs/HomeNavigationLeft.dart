@@ -13,10 +13,10 @@ class HomeNavigationLeft extends StatelessWidget{
       color: R.color.white,
       child: Column(
         children: [
-          LeftNavigationTab(title: "导航栏1",onTap: (){ print("点击导航栏1" ); },),
-          LeftNavigationTab(title: "导航栏2",onTap: (){ print("点击导航栏2" ); },),
-          LeftNavigationTab(title: "导航栏3",onTap: (){ print("点击导航栏3" ); },),
-          LeftNavigationTab(title: "导航栏4",onTap: (){ print("点击导航栏4" ); },),
+          LeftNavigationTab(title: "Project",onTap: (){ print("点击导航栏1" ); },),
+          LeftNavigationTab(title: "Resources",onTap: (){ print("点击导航栏3" ); },),
+          LeftNavigationTab(title: "Commit",onTap: (){ print("点击导航栏2" ); },),
+          LeftNavigationTab(title: "BookMarks",onTap: (){ print("点击导航栏3" ); },),
         ],
       ),
     );
