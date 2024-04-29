@@ -5,16 +5,17 @@ import 'dart:ui';
 class Dimens {
 
   /// 顶部导航栏字体大小
-  double topNavigationTextSize = 14 ;
+  double textSizeNavigationTop = 14 ;
   /// 左右导航栏字体大小
-  double leftAndRightNavigationTextSize = 14;
+  double textSizeNavigationLeftAndRight = 14;
   /// 底部导航栏字体大小
-  double bottomNavigationTextSize = 14;
+  double textSizeNavigationBottom = 14;
 
   /// 主页左侧窗口最小宽度
-  double homeLeftWindowMinWidth = 300;
+  double windowMinWidthHomeLeft = 300;
   /// 主页右侧窗口最小宽度
-  double homeRightWindowMinWidth = 300;
-  double homeBottomWindowMinHeight = 300;
+  double windowMinWidthHomeRight = 300;
+  /// 主页底部窗口最小高度
+  double windowMinHeightHomeBottom = 200;
 
 }

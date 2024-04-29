@@ -24,7 +24,7 @@ class HomeNavigationTop extends StatelessWidget{
           TopNavigationTab(title: "Git",onTap: (){ print("点击导航栏4" ); },),
           /// Help: Flutter Studio Help , What News , Licenses , Check for update , About
           TopNavigationTab(title: "Help",onTap: (){ print("点击导航栏4" ); },),
-          Spacer(),
+          const Spacer(),
           // Container(decoration: ,),
           SizedBox(width: 10),
           Icon(Icons.play_arrow_sharp),
@@ -54,10 +54,10 @@ class TopNavigationTab extends StatelessWidget{
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
+        padding: R.padding.homeNavigationPaddingTop,
         child: Text(
           title ,
-          style: const TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black,decoration: TextDecoration.none,),
+          style: R.style.textStyleNavigationTop,
         ),
       ),
     );

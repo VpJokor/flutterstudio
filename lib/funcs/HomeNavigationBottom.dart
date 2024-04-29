@@ -40,10 +40,10 @@ class BottomNavigationTab extends StatelessWidget{
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
+        padding: R.padding.homeNavigationPaddingBottom,
         child: Text(
           title ,
-          style: const TextStyle(fontSize: R.size.bottomNavigationTextSize,fontWeight: FontWeight.w500,color: Colors.black,decoration: TextDecoration.none,),
+          style: R.style.textStyleNavigationBottom,
         ),
       ),
     );

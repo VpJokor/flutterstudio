@@ -39,13 +39,13 @@ class LeftNavigationTab extends StatelessWidget{
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
+        padding: R.padding.homeNavigationPaddingLeftAndRight,
         child: RotatedBox(
           // 这里设置为 -1 表示逆时针旋转90度
           quarterTurns: -1,
           child: Text(
             title ,
-            style: const TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black,decoration: TextDecoration.none,),
+            style: R.style.textStyleNavigationLeftAndRight,
           ),
         ),
       ),

@@ -9,7 +9,10 @@ class HomeWindowBottom extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      constraints: BoxConstraints(
+        /// 设置最小高度
+        minHeight: R.size.windowMinHeightHomeBottom,
+      ),
       color: Colors.grey.shade100,
       alignment: Alignment.center,
       child: const Text("底部面板"),

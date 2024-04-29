@@ -8,11 +8,12 @@ import 'values/Strings.dart';
 import 'values/Styles.dart';
 import 'values/Themes.dart';
 import 'values/Dimens.dart';
+import 'values/Paddings.dart';
 
 /// 资源文件类由ide自动生成
 /// ide自动生成的资源文件类有
 /// R , Font , Icon , Image , Raw
-/// Color , Dimens , Strings , Theme 由用户手动编辑
+/// Color , Dimens , Paddings , Strings , Theme 由用户手动编辑
 class R {
   static Icon icon = Icon();
   static Image image = Image();
@@ -23,4 +24,5 @@ class R {
   static Strings string = Strings();
   static Themes theme = Themes();
   static Styles style = Styles();
+  static Paddings padding = Paddings();
 }

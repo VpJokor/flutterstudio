@@ -38,25 +38,25 @@ class HomePage extends StatelessWidget{
                          child: Row(
                            crossAxisAlignment: CrossAxisAlignment.stretch,
                            children: [
-                             //左侧窗口
+                             /// 左侧窗口
                              HomeWindowLeft(),
-                             //中间窗口
+                             /// 中间窗口
                              Expanded(
                                child: HomeWindowCenter(),
                              ),
-                             //右侧窗口
+                             /// 右侧窗口
                              HomeWindowRight(),
                            ],
                          ),
                        ),
-                      // //底部窗口
+                      /// 底部窗口
                       HomeWindowBottom(),
-                      // //底部导航栏
+                      /// 底部导航栏
                       HomeNavigationBottom(),
                     ],
                   ),
                 ),
-                //右侧导航
+                /// 右侧导航
                 HomeNavigationRight(),
               ],
             ),
