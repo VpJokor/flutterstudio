@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       theme: R.theme.appTheme,
-      home: const HomePage(),
+      home: HomePage(),
     );
 
   }

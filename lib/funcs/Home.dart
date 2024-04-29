@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'HomeAController.dart';
+import 'HomeAState.dart';
 
 import 'HomeNavigationBottom.dart';
 import 'HomeNavigationLeft.dart';
@@ -12,8 +15,11 @@ import 'HomeWindowRight.dart';
 
 /// FlutterCheck 主页
 class HomePage extends StatelessWidget{
-  const HomePage({super.key});
+  HomePage({super.key});
 
+  final HomeAController controller = Get.put(HomeAController());
+  final HomeAState state = Get.find<HomeAController>().state;
+  
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
