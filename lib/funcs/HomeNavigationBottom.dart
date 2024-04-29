@@ -43,7 +43,7 @@ class BottomNavigationTab extends StatelessWidget{
         padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
         child: Text(
           title ,
-          style: const TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black,decoration: TextDecoration.none,),
+          style: const TextStyle(fontSize: R.size.bottomNavigationTextSize,fontWeight: FontWeight.w500,color: Colors.black,decoration: TextDecoration.none,),
         ),
       ),
     );
