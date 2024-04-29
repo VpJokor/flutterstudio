@@ -1,17 +1,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'HomeAController.dart';
-import 'HomeAState.dart';
+import '../HomeAController.dart';
+import '../HomeAState.dart';
 
-import 'HomeNavigationBottom.dart';
-import 'HomeNavigationLeft.dart';
-import 'HomeNavigationRight.dart';
-import 'HomeNavigationTop.dart';
-import 'HomeWindowBottom.dart';
-import 'HomeWindowCenter.dart';
-import 'HomeWindowLeft.dart';
-import 'HomeWindowRight.dart';
+import '../HomeNavigationBottom.dart';
+import '../HomeNavigationLeft.dart';
+import '../HomeNavigationRight.dart';
+import '../HomeNavigationTop.dart';
+import '../HomeWindowBottom.dart';
+import '../HomeWindowCenter.dart';
+import '../HomeWindowLeft.dart';
+import '../HomeWindowRight.dart';
 
 /// FlutterCheck 主页
 class HomePage extends StatelessWidget{

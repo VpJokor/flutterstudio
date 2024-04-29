@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../res/R.dart';
+import '../../res/R.dart';
 
 /// 主页顶部导航栏
 

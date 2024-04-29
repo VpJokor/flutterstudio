@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
-
-import '../res/R.dart';
+import '../../res/R.dart';
 
 /// 主页底部导航栏
 class HomeNavigationBottom extends StatelessWidget{

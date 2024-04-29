@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'funcs/Home.dart';
+import 'funcs/home/Home.dart';
 import 'res/R.dart';
 
 void main() {

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../res/R.dart';
+import '../../res/R.dart';
 
 class HomeWindowRight extends StatelessWidget{
   const HomeWindowRight({super.key});
