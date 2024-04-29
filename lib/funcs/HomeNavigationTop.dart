@@ -11,7 +11,7 @@ class HomeNavigationTop extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       color: R.color.white,
-      margin: EdgeInsets.only(right: 10),
+      margin: const EdgeInsets.only(right: 10),
       child: Row(
         children: [
           /// File： new(Project,File,Directory,DartFile) , Recent Project , Open Project , Open File , Invalidate Caches , Save All
