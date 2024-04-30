@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'HomeAController.dart';
-import 'HomeAState.dart';
 import 'HomeBNavigationBottom.dart';
 import 'HomeBNavigationLeft.dart';
 import 'HomeBNavigationRight.dart';
@@ -18,10 +17,10 @@ class HomePage extends StatelessWidget{
   HomePage({super.key});
 
   final HomeAController controller = Get.put(HomeAController());
-  final HomeAState state = Get.find<HomeAController>().state;
-  
+
   @override
   Widget build(BuildContext context) {
+
     return const Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
