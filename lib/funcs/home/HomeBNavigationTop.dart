@@ -51,10 +51,21 @@ class TopNavigationTab extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: R.padding.homeNavigationPaddingTop,
+    return Container(
+      padding: R.padding.homeNavigationPaddingTop,
+      child: MenuAnchor(
+        menuChildren: [
+          Text(
+            title ,
+            style: R.style.textStyleNavigationTop,
+          ),Text(
+            title ,
+            style: R.style.textStyleNavigationTop,
+          ),Text(
+            title ,
+            style: R.style.textStyleNavigationTop,
+          ),
+        ],
         child: Text(
           title ,
           style: R.style.textStyleNavigationTop,
@@ -63,3 +74,4 @@ class TopNavigationTab extends StatelessWidget{
     );
   }
 }
+
