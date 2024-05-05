@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../res/R.dart';
 
@@ -11,7 +12,7 @@ class HomeNavigationTop extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       color: R.color.white,
-      margin: const EdgeInsets.only(right: 10),
+      margin: const EdgeInsets.only(left:40,right: 10),
       child: Row(
         children: [
           /// File： new(Project,File,Directory,DartFile) , Recent Project , Open Project , Open File , Invalidate Caches , Save All
@@ -42,6 +43,7 @@ class HomeNavigationTop extends StatelessWidget{
 
 /// 顶部导航栏按钮封装
 /// 包含 一个 Title 和 对应的点击事件
+/// 参考帖子 https://juejin.cn/post/7357301805569900555?searchId=20240505005924BD8E9C58EC1D421B225E
 class TopNavigationTab extends StatelessWidget{
 
   final String title;
@@ -52,26 +54,60 @@ class TopNavigationTab extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: R.padding.homeNavigationPaddingTop,
-      child: MenuAnchor(
+      // padding: R.padding.homeNavigationPaddingTop,
+      alignment: Alignment.center,
+      // child: Text(title),
+      child: SubmenuButton(
         menuChildren: [
-          Text(
-            title ,
-            style: R.style.textStyleNavigationTop,
-          ),Text(
-            title ,
-            style: R.style.textStyleNavigationTop,
-          ),Text(
-            title ,
-            style: R.style.textStyleNavigationTop,
+          MenuItemButton(
+            child: Text('导出 PNG'),
+            // shortcut: SingleActivator(LogicalKeyboardKey.keyO, control: true),
+            onPressed: () {
+              print("======导出 PNG==========");
+            },
+          ),
+          MenuItemButton(
+            child: Text('导出 SVG'),
+            onPressed: () {
+              print("======导出 SVG==========");
+            },
           ),
         ],
-        child: Text(
-          title ,
-          style: R.style.textStyleNavigationTop,
-        ),
+        child: Text(title),
       ),
     );
   }
 }
 
+
+
+class MenuEntry {
+  const MenuEntry({
+    required this.label,
+    this.action,
+    this.tail,
+    this.shortcut,
+    this.menuChildren,
+  });
+
+  final String label;
+  final String? tail;
+  final MenuAction? action;
+  final MenuSerializableShortcut? shortcut;
+  final List<MenuEntry>? menuChildren;
+}
+
+enum MenuAction{
+  newFile,
+  openFile,
+  importFile,
+  saveFile,
+  outputFilePng,
+  outputFileJpg,
+  outputFileSvg,
+  back,
+  undo,
+  copy,
+  past,
+  clear,
+}
